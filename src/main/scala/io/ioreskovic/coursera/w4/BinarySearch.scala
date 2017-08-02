@@ -18,8 +18,8 @@ object BinarySearch {
         val mid = (from + until) / 2
         val y = arr(mid)
         if (x == y) mid
-        else if (x < y) loop(from, until - 1)
-        else loop(from + 1, until)
+        else if (x < y) loop(from, mid - 1)
+        else loop(mid + 1, until)
       }
     }
 
