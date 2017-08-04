@@ -11,7 +11,7 @@ object PointsAndSegments {
   }
 
   case class QueryPoint(value: Int) extends Point {
-    override def priority: Int = 2
+    override def priority: Int = 1
   }
 
   case class SegmentStart(value: Int) extends Point {
@@ -19,7 +19,7 @@ object PointsAndSegments {
   }
 
   case class SegmentEnd(value: Int) extends Point {
-    override def priority: Int = 1
+    override def priority: Int = 2
   }
 
   implicit val pointOrdering: Ordering[Point] = new Ordering[Point] {
