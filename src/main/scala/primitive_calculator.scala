@@ -193,10 +193,10 @@ object primitive_calculator {
   def main(args: Array[String]): Unit = {
     val n = StdIn.readInt()
 
-    val startD = System.currentTimeMillis()
+//    val startD = System.currentTimeMillis()
     val solutionD = solve(n)
-    val endD = System.currentTimeMillis()
-    println("Declarative time: " + (endD - startD))
+//    val endD = System.currentTimeMillis()
+//    println("Declarative time: " + (endD - startD))
 //    println("Declarative steps: " + solutionD.steps)
 //    println("Declarative inters: " + solutionD.inters.mkString(" "))
         println(solutionD.steps)
